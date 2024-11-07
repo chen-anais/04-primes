@@ -4,10 +4,15 @@ from math import sqrt
 
 
 def isprime(p):
-
-    # votre code ici
-
-    pass
+    premier = True
+    n = int(input("entrer un nombre: "))
+    max = int(sqrt(n)) + 1
+    for i in range(2,max + 1):
+        if n % i == 0:
+            premier = False
+            a= int(n/i)
+            print(f'{n} = {i} x {a} : False')
+            break
 
 #### Fonction principale
 
